@@ -1,0 +1,12 @@
+runtime: php81 
+
+handlers:
+- url: /assets
+  static_dir: assets 
+
+- url: /forms
+  static_dir: forms  
+
+- url: /.*
+  static_files: index.html 
+  upload: index.html
